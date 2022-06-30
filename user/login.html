@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<head>
+		<link rel="stylesheet" href="../css/login.css">
+		<title>그루, GROW</title>
+		 <link rel="shortcut icon" type="image/x-icon" href="../image/tree.png">  
+	</head>
+
+	<body> 
+		<form method="POST" action='../user/logincheck.jsp'>
+			<div class="login">
+				<div class="login-screen">
+					<div class="app-title">
+						<h1>Login</h1>
+					</div>
+					<div class="loginform">
+						<div class="control">
+							<input type="text" id="idt" value="" placeholder="username" name="userid">
+							<label class="login-field-icon fui-user" for="login-name"></label>
+						</div>
+						<div class="control-group">
+							<input type="password" id="pwt" value="" placeholder="password" name="userpw">
+							<label class="login-field-icon fui-lock" for="login-pass"></label>
+						</div>
+						<br>
+						<br>
+						<input type='submit' value='login' class='btn'>
+						<br>
+						<br>
+						<div id="footer">
+							<a class="underlineHover" style="cursor: pointer;"onclick="location.href='gather.html';"> 아직 회원이 아니신가요? </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

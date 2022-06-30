@@ -1,0 +1,174 @@
+*{
+  margin: 0; 
+  padding: 0;
+} 
+
+@font-face{ 
+  font-family: ff; 
+  src: url(MaruBuri-Regular.ttf); 
+}
+
+.menubar { 
+	position: relative;
+	width:2000px;
+	text-align : center;
+	border-bottom: solid 1px lightgrey;
+	font-size: 1.25em;
+} 
+
+.menubar ul li {
+	display: inline-block;
+	font-family: ff; 
+	list-style: none; 
+	width:150px; 
+	text-align: center; 
+	line-height: 2em; 
+}
+
+
+.menubar ul li:hover{
+	background: rgb(240,240,240);
+}
+
+.menuber ul li.selected {
+	background: rgb(240,240,240);
+}
+
+.menubar  ul li.selected a{
+	color: #8DB596;
+}
+
+
+.menubar ul li a { 
+	text-align	: center;
+	text-decoration: none;
+	vertical-align: bottom;
+	color: grey;
+} 
+
+.menubar ul li:hover a {
+	color: #8DB596; 
+}
+
+.menubar ul ul {
+	display: none; 
+	position: absolute; 
+}
+
+.menubar ul li ul li {
+  display: block;
+}
+
+
+.menubar ul li:hover ul {
+	display: block;
+}
+
+.menubar ul li:hover ul li a {
+	color: grey;
+}
+
+.menubar ul li:hover ul li:hover a {
+	color: #8DB596;
+
+}
+#commu {
+    background-image: url("../image/그림2.png");
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 400px;
+    margin-left: 60px;
+    color: gray;
+    font-family: ff;
+    position: absolute;
+    top: 450px;
+}
+#commu div {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+#commu_text1 {
+    padding-top: 80px;
+    font-size: 1.5em;
+}
+
+
+#top_menu {
+	float: right;
+	font-size: 20px;
+
+}
+
+#top_menu a {
+	text-align:center;
+	font-size: 20px;
+	padding-bottom: 5px;
+	text-align	: center;
+	text-decoration: none;
+	vertical-align: bottom;
+	color: grey;
+}
+
+#info {
+	background-color: #F0F0F0;
+	height: 100px;
+	text-align	: center;
+	font-size: 20px;
+	font-family: ff; 
+
+}
+.question {
+	font-size: 20px;
+	text-align: center;
+	transition: 0.25s;
+	font-family: ff; 
+	
+}
+
+.nomal {
+	font-size: 25px;
+	color: grey;
+	font-family: ff; 
+}
+
+.next {
+	display: inline-block;
+	width: 120px;
+	height: 35px;
+	border: none;
+	background-color: #77A180;
+	border-radius: 3px;
+	color: #fff; 
+	font-size: 17px;
+	font-weight: bold;
+	position: relative; 
+	font-family: ff; 
+}
+
+
+::-webkit-scrollbar-thumb {
+	background: #8DB596;
+}
+::-webkit-scrollbar-track {
+	background: #F0F0F0;
+}
+
+::-webkit-scrollbar {
+	width: 20px;
+}
+
+footer{
+
+    clear: both;
+    background-color: #201b1be3;
+    float: left;
+    left :0;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0px;
+    
+    position: fixed; bottom: 0; width: 100%;     
+
+  }
+

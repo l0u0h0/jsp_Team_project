@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>그루, GROW 스케줄 등록</title>
+	<link rel="stylesheet" href="../css/uploadfile.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../image/tree.png">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<script>
+    var url = location.search;
+    var detail = url.split("=");
+    var result = detail[1];
+    // matching.html에서 get방식으로 받은 값을 url에서 따와서 하단 폼에서 hidden을 이용해 jsp파일로 값 넘겨주기
+</script>
+<body>
+	<header>
+		<a href="../main/main.jsp"><img src="../image/logo.png"></a>
+	</header>
+
+	<div class="menubar">
+		<ul>
+			<li><a href="../match/matching.html"> 매칭 </a></li>
+			<li><a href="../user/gathering.jsp"> 모집 </a></li>
+			<li><a> 관리 </a>
+				<ul>
+					<li><a href="../manage/manageschedule.jsp"> 스케줄 관리 </a></li>
+					<li><a href="../manage/managedata.jsp"> 자료 관리 </a></li>
+				</ul>
+			</li>
+			<li><a> 마이 페이지 </a>
+				<ul>
+					<li><a href="../user/info_edit.jsp"> 회원 정보 </a></li>
+					<li><a href="../apply/apply_check.jsp"> 신청 내역 </a></li>
+					<li><a href="../apply/apply.jsp"> 내 신청서 </a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+
+	<div align='center'>
+		<section id="info" align='center' style="padding-top: 25px; height: 60px">
+			<span style="color: grey; "> 스케줄 등록 </span>
+		</section>
+
+		<section class="box" align='left' style="height: 700px;">
+			<form action="schedule_write.jsp" method="post">
+                <script>
+					document.write('<input type="hidden" id="jo_no" name="jo_no" value="'+result+'">');
+				</script>
+				<table width="1000px">
+					<tr align="center">
+						<td bgcolor="lightgrey" style="font-family:ff; text-align: center;" width="200px" height="60px">
+							<b>일시</b>
+						</td>
+						<td style="background-color: #F0F0F0;">
+							<input type="date" name="date" size="70px"
+								style="font-size: 20px; font-family: ff; height: 60px; border: 0; background-color: #F0F0F0;">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="time" name="time" size="70px"
+								style="font-size: 20px; font-family: ff; height: 60px; border: 0; background-color: #F0F0F0;">&nbsp;&nbsp; 부터 &nbsp;&nbsp;
+                            <input type="time" name="time1" size="70px"
+								style="font-size: 20px; font-family: ff; height: 60px; border: 0; background-color: #F0F0F0;"><br>
+						</td>
+					</tr>
+					<tr align="center">
+						<td bgcolor="lightgrey" style="font-family: ff;" width="200px" style="text-align: center;">
+							<b>설명</b><br> &nbsp;&nbsp;&nbsp;
+						</td>
+						<td style="background-color: #F0F0F0;">
+							<textarea name="SC_CON" cols="70" rows="10" placeholder="내용을 입력해주세요."
+								style="font-size: 20px; font-family: ff; border: 0; background-color: #F0F0F0;"></textarea>
+						</td>
+					</tr>
+				</table>
+
+				<section style="float: right;">
+					<script src="../js/jquery.min.js"></script>
+					<script type="text/javascript" src="../js/write.js"></script>
+					<input type="submit" value=" 등록 " class="next" style="float: right; margin-left: 3px;">
+				</section>
+			</form>
+
+	</div>
+</body>
+<footer>
+	Made by E팀
+</footer>
+
+</html>

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>그루, GROW</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../image/tree.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+    <link rel="stylesheet" href="../css/apply.css">
+</head>
+<body>
+        <header>
+            <a href="../main/main.jsp"><img src="../image/logo.png"></a>
+        </header>
+
+        <div class="menubar">
+            <ul>
+                <li><a href="../match/matching.html"> 매칭 </a></li> 
+                <li><a href="../user/gathering.html"> 모집 </a></li> 
+                <li><a> 관리 </a>
+                    <ul>
+                        <li><a href="../manage/manage.html"> 스케줄 관리 </a></li>
+                        <li><a href="../manage/manage.html"> 자료 관리 </a></li>
+                    </ul>
+                </li>
+                <li><a> 마이 페이지 </a>
+          <ul>
+            <li><a href="../user/info_edit.html"> 회원 정보 </a></li>
+            <li><a href="../apply/apply_check.html"> 신청 내역 </a></li>
+            <li><a href="../apply/apply.html"> 내 신청서 </a></li>
+          </ul>
+        </li> 
+      </ul>
+    </div>
+
+
+    <div id="commu">
+     <b> <a> <div id="commu_text1"> &nbsp; 마이 페이지 </div> </a> <br>
+        <div id="commu_text2" style="cursor: pointer;"onclick="location.href='info_edit.html';"> &nbsp;- &nbsp;회원 정보 </div>
+        <div id="commu_text3" style="cursor: pointer;"onclick="location.href='#';"> &nbsp;- &nbsp;신청 내역 </div>
+        <div id="commu_text4" style="cursor: pointer;"onclick="location.href='apply.html';"> &nbsp;- &nbsp;내 신청서 </div> </b>
+        <br><br><br>
+    </div>
+
+
+        <h3 class="write"> 내 신청서 목록 </h3>
+        <div class="board_list_wrap">
+            <form>
+            <table class="board_list">
+                <caption>게시판 목록</caption>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성일</th>
+                        <th>수정 삭제</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td class="tit">
+                            <a href="apply_write.html"> 안녕하세요. 스터디 지원합니다. </a>
+                        </td>
+                        <td>2019-10-28</td>
+                        <td><input type="button" value="수정" style="display: inline;">&nbsp; <input type="button" value="삭제"  style="display: inline;"></td> 
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="tit">
+                            <a href="apply_write.html"> 안녕하세요. 튜터링 희망합니다. </a>
+                        </td>
+                        <td>2019-10-24</td>
+                        <td><input type="button" value="수정"  style="display: inline;">&nbsp; <input type="button" value="삭제"  style="display: inline;"></td> 
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+                <input type="button" value="글쓰기" class="next" style="cursor: pointer;"onclick="location.href='apply_write.html';">
+           
+
+            <div class="paging">
+                <a href="#" class="bt">첫 페이지</a>
+                <a href="#" class="bt">이전 페이지</a>
+                <a href="#" class="num on">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="bt">다음 페이지</a>
+                <a href="#" class="bt">마지막 페이지</a>
+            </div>
+        </div>
+ </form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="../image/tree.png">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 그루, GROW 회원가입</title>
+    <link rel="stylesheet" href="../css/gather.css"> 
+</head>
+<body>
+    <div id="container">
+        <div class="form-wrap">
+          <h1>Sign Up</h1>
+          <p> 그루에 오신 것을 환영합니다. </p>
+          <form method="POST" action="gather.jsp">
+            <div class="form-group">
+              <label for="name">이름</label>
+              <input type="text" name="name" id="name">
+            </div>
+            <div class="form-group">
+              <label for="last-name">아이디</label>
+              <input type="text" name="id" id="id">
+            </div>
+
+            <div class="form-group">
+              <label for="password">비밀번호</label>
+              <input type="password" name="password" id="password">
+            </div>
+            <div class="form-group">
+              <label for="password2">비밀번호 확인</label>
+              <input type="password" name="password2" id="password2">
+            </div>            
+            <div class="form-group">
+              <label for="email">이메일</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="form-group">
+              <label for="phone">전화번호</label>
+              <input type="text" name="phone" id="phone">
+            </div>
+            <div class="form">
+            	<label for="sex">성별</label>
+            	<input type="radio" name="sex" value="여성"> 여성 &nbsp;&nbsp;&nbsp;&nbsp;
+            	<input type="radio" name="sex" value="남성"> 남성
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+            <p class="bottom-text">
+              By clicking the Sign Up button, you agree to our
+              <a href="#">Terms & Conditions</a> and
+              <a href="#">Privacy Policy</a>
+            </p>
+          </form>
+        </div>
+        <div id="footer">
+        	<a class="underlineHover" style="cursor: pointer;"onclick="location.href='login.html';"> 이미 가입하셨나요? </a>
+        </div>
+      </div>
+</body>
+</html>

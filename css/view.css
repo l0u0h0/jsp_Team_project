@@ -1,0 +1,172 @@
+*{
+  margin: 0; 
+  padding: 0;
+} 
+
+
+@font-face{ 
+  font-family: ff; 
+  src: url(MaruBuri-Regular.ttf); 
+}
+
+@font-face { 
+    font-family:"pp";
+    src: url(NanumBarunpenR.ttf); 
+ }
+
+.menubar { 
+	position: relative;
+	width:2000px;
+	text-align : center;
+	border-bottom: solid 1px lightgrey;
+	font-size: 1.25em;
+} 
+
+.menubar ul li {
+	display: inline-block;
+	font-family: ff; 
+	list-style: none; 
+	width:150px; 
+	text-align: center; 
+	line-height: 2em; 
+}
+
+
+.menubar ul li:hover{
+	background: rgb(240,240,240);
+}
+
+.menuber ul li.selected {
+	background: rgb(240,240,240);
+}
+
+.menubar  ul li.selected a{
+	color: #8DB596;
+}
+
+
+.menubar ul li a { 
+	text-align	: center;
+	text-decoration: none;
+	vertical-align: bottom;
+	color: grey;
+} 
+
+.menubar ul li:hover a {
+	color: #8DB596; 
+}
+
+.menubar ul ul {
+	display: none; 
+	position: absolute; 
+}
+
+.menubar ul li ul li {
+  display: block;
+}
+
+
+.menubar ul li:hover ul {
+	display: block;
+}
+
+.menubar ul li:hover ul li a {
+	color: grey;
+}
+
+.menubar ul li:hover ul li:hover a {
+	color: #8DB596;
+
+}
+
+#footer {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    color: #0066FF;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+
+}
+
+
+#title {
+    position: absolute;
+    left: 17%;
+    font-size: 1.2em;
+    border: solid 1px lightgrey;
+    margin-top: 5%;
+    padding: 20px;
+    width: 1230px;
+    padding-left: 50px;
+}
+
+#info {
+    font-size: 0.8em; 
+    position: absolute;
+    left: 70%;
+}
+
+#container {
+border: solid 1px lightgrey;
+    margin-top: 5%;
+    padding: 50px;
+    width: 1200px;
+    height: auto;
+    left: 17%;
+    margin-top: 8%;
+    position: absolute;
+}
+
+.btn1 {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border: none;
+    font-family: ff;
+    background-color: #77A180;
+    border-radius: 3px;
+    color: #fff; 
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    left: 75%;
+    top: 390px;
+}
+.btn2 {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border: none;
+    font-family: ff;
+    background-color: #77A180;
+    border-radius: 3px;
+    color: #fff; 
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    left: 80%;
+    top: 390px;
+}
+
+.btn {
+  border: 2px solid transparent;
+  background: #8DB596;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
+ 
+.btn:hover {
+  background-color: #77A180;
+}

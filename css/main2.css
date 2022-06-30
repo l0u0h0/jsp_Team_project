@@ -1,0 +1,192 @@
+*{
+  margin: 0; 
+  padding: 0;
+} 
+
+@font-face{ 
+  font-family: ff; 
+  src: url(MaruBuri-Regular.ttf); 
+}
+
+
+
+.menubar { 
+	position: relative;
+	width:2000px;
+	text-align : center;
+	border-bottom: solid 1px lightgrey;
+	font-size: 1.25em;
+} 
+
+.menubar ul li {
+	display: inline-block;
+	font-family: ff; 
+	list-style: none; 
+	width:150px; 
+	text-align: center; 
+	line-height: 2em; 
+}
+
+
+.menubar ul li:hover{
+	background: rgb(240,240,240);
+}
+
+.menuber ul li.selected {
+	background: rgb(240,240,240);
+}
+
+.menubar  ul li.selected a{
+	color: #8DB596;
+}
+
+
+.menubar ul li a { 
+	text-align	: center;
+	text-decoration: none;
+	vertical-align: bottom;
+	color: grey;
+} 
+
+.menubar ul li:hover a {
+	color: #8DB596; 
+}
+
+.menubar ul ul {
+	display: none; 
+	position: absolute; 
+}
+
+.menubar ul li ul li {
+  display: block;
+}
+
+
+.menubar ul li:hover ul {
+	display: block;
+}
+
+.menubar ul li:hover ul li a {
+	color: grey;
+}
+
+.menubar ul li:hover ul li:hover a {
+	color: #8DB596;
+
+}
+
+
+#loginback {
+	margin-top: 25px;
+	border: solid 1px lightgrey;
+	width: 335px;
+	height: 100px;
+	float: right;
+	padding: 10px;
+	position: absolute;
+	top: 400px;
+	left: 1450px;
+	margin-right: 100px;
+}
+
+#loginback p {
+	margin-top: 13px;
+	font-family: ff; 
+	margin-left: 20px;
+	font-size: 1.3em;
+}
+
+
+.logout ul {
+	display: inline;
+	color: gray;
+	position: relative;
+	margin-top: 10px;
+	margin-left: 145px;
+	font-size: 0.8em
+}
+
+.logout ul li{
+		display: inline;
+		margin-top: 340px;
+}
+
+footer{
+    clear: both;
+    float: left;
+    left :0;
+    background-color: #8DB596;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0px;
+    position: fixed;
+    bottom: 0;  
+  }
+
+
+.page-wrapper {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: calc(100% - 200px);
+}
+  .post-slider{
+    width: 75%;
+    margin: 0;
+    position:absolute;
+    top: 90px;
+    left: 60px;
+    background-color: rgba(100, 175, 104, 0.37);
+    padding: 10px 0px 10px 0px;
+
+  }
+.post-slider .silder-title {
+  text-align: center;
+  color: gray;
+  margin: 30px auto;
+}
+
+  .post-slider .next{
+    position:absolute;
+    top:50%;
+    right:30px;
+    font-size:2em;
+    color:gray;
+    cursor: pointer;
+  }
+  .post-slider .prev{
+    position:absolute;
+    top:50%;
+    left:30px;
+    font-size:2em;
+    color:gray;
+      cursor: pointer;
+  }
+
+  .post-slider .post-wrapper{
+    width:84%;
+    height:500px;
+    margin:0px auto;
+    overflow: hidden;
+    padding:10px 0px 10px 0px;
+  }
+  .post-slider .post-wrapper .post{
+    width:300px;
+    height:700px;
+    margin:0px 10px;
+    display:inline-block;
+    background:rgba(255, 255, 255, 0.719);
+    border-radius: 5px;
+  }
+  .post-slider .post-wrapper .post .post-info{
+    font-size:15px;
+    height:30%;
+    padding-left:10px;
+  }
+  .post-slider .post-wrapper .post .slider-image{
+    width:100%;
+    height:300px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+  }
+

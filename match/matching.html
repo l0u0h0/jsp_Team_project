@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>그루, GROW 매칭</title>
+		<link rel="stylesheet" href="../css/matching.css">
+		<link rel="shortcut icon" type="image/x-icon" href="../image/tree.png">
+    	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	</head>
+
+	<body>
+		<header>
+			<a href="../main/main.jsp"><img src="../image/logo.png"></a>
+		</header>
+
+		<div class="menubar">
+			<ul>
+				<li><a href="../match/matching.html"> 매칭 </a></li> 
+				<li><a href="../user/gathering.jsp"> 모집 </a></li> 
+				<li><a> 관리 </a>
+					<ul>
+						<li><a href="../manage/manageschedule.jsp"> 스케줄 관리 </a></li>
+						<li><a href="../manage/managedata.jsp"> 자료 관리 </a></li>
+					</ul>
+				</li>
+				<li><a> 마이 페이지 </a>
+		        	<ul>
+			            <li><a href="../user/info_edit.jsp"> 회원 정보 </a></li>
+			            <li><a href="../apply/apply_check.jsp"> 신청 내역 </a></li>
+			            <li><a href="../apply/apply.jsp"> 내 신청서 </a></li>
+		          </ul>
+		        </li> 
+			</ul>
+		</div>
+
+		
+
+		<div id="info">
+		 	<br> 원하는 항목을 체크해주세요. <br>
+		 	 일정 비율 이상 동일한 사용자와의 <b>매칭</b>이 시작됩니다.
+        </div>
+
+		<section class="question" >
+			<h2><br>Q.매칭을 원하는 항목을 선택해주세요.<br><br><br></h2>
+			<form action="../match/detail.html" method="GET">
+				<input type="radio" name="matching" value="s"><span class="nomal">스터디</span><br><br>
+				<input type="radio" name="matching" value="t"><span class="nomal">튜터링</span><br>
+				<br><br>
+				<input type="submit" value=" 다음 항목으로 " class="next"><br><br><br><br>
+					
+				</div>
+			</form>
+		</section>
+		
+	</body>
+	<footer>
+        Made by 
+    </footer>
+           
+      
+</html>
+

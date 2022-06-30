@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<link rel="shortcut icon" type="image/x-icon" href="../image/tree.png">  
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>그루, GROW 매칭</title>
+		<link rel="stylesheet" href="../css/detail.css">
+		<link rel="shortcut icon" type="image/x-icon" href="../image/tree.png">
+    	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	</head>
+	<script>
+		var url = location.search;
+		var detail = url.split("=");
+		var result = detail[1];
+		// matching.html에서 get방식으로 받은 값을 url에서 따와서 하단 폼에서 hidden을 이용해 jsp파일로 값 넘겨주기
+	</script>
+	<body>
+		<header>
+			<a href="../main/main.jsp"><img src="../image/logo.png"></a>
+		</header>
+
+		<div class="menubar">
+			<ul>
+				<li><a href="../match/matching.html"> 매칭 </a></li> 
+				<li><a href="../user/gathering.jsp"> 모집 </a></li> 
+				<li><a> 관리 </a>
+					<ul>
+						<li><a href="../manage/manageschedule.jsp"> 스케줄 관리 </a></li>
+						<li><a href="../manage/managedata.jsp"> 자료 관리 </a></li>
+					</ul>
+				</li>
+				<li><a> 마이 페이지 </a>
+		        	<ul>
+			            <li><a href="../user/info_edit.jsp"> 회원 정보 </a></li>
+			            <li><a href="../apply/apply_check.jsp"> 신청 내역 </a></li>
+			            <li><a href="../apply/apply.jsp"> 내 신청서 </a></li>
+		          </ul>
+		        </li> 
+			</ul>
+		</div>
+
+		<div  align = 'center'>
+			<section class="box" align = 'left' >
+				<span style="color: grey"> > 세부 사항 선택 </span>
+			</section>
+			<section class="box" align = 'left'>
+				<form action="matching.jsp" method="post">
+				<script>
+					document.write('<input type="hidden" id="type" name="type" value="'+result+'">');
+				</script>
+				<DIV style = "width: 100%; height: 350px; overflow-y: auto; overflow-x: hidden;">
+				<table>
+					
+						<tr align="left">
+							<td style="font-family: ff"><br>
+								<b>성별</b> &nbsp;&nbsp;&nbsp; <input type="radio" name="sex" value="남"> 남 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								<input type="radio" name="sex" value="여"> 여 <br><br>
+							</td>
+							<td style="padding-left: 100px" style="font-family: ff" width="300px">
+								<b>분류 </b> &nbsp;&nbsp;&nbsp; <select name="us_cl" size="1" style="font-size: 17px">
+									<option> 선택항목 </option>
+									<option value="toeic">토익</option>
+									<option value="info_pro">정보처리기사</option>
+									<option value="ko_his">한국사능력검정</option>
+									<option value="opic">오픽</option>
+									<option value="in_view">면접</option>
+									<option value="com_1">컴퓨터활용능력 1급</option>
+								</select>
+							</td>
+							<td style="padding-left: 100px"style="font-family: ff" width="220px">
+								<b>나이 </b> &nbsp;&nbsp;&nbsp; <select name="age" size="1" style="font-size: 17px">
+									<option> 선택항목 </option>
+									<option value="10">10대</option>
+									<option value="20">20대</option>
+									<option value="30">30대</option>
+									<option value="40">40대</option>
+									<option value="50">50대</option>
+									<option value="60">60대</option>
+								</select>
+							</td>
+								
+						</tr>
+						<tr>
+							<td style="padding-bottom: 145px">
+								<b>미팅</b> &nbsp;&nbsp;&nbsp; <input type="radio" name="meeting" value="1"> 대면 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="meeting" value="2" >비대면
+							</td>
+							<td style="padding-left: 100px; padding-bottom: 145px"style="font-family: ff" width="220px">
+								<b>원하는 인원 수 </b> &nbsp;&nbsp;&nbsp; <select name="num" size="1" style="font-size: 17px">
+									<option> 선택항목 </option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+								</select>
+							</td>
+						</tr>
+							
+						<tr >
+							<td style="font-family: ff" colspan="3">
+								<b> 나의 성향 </b> &nbsp;&nbsp;&nbsp; 
+								<input type="checkbox" name="my_tendency" value="1"> 열정적인 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="checkbox" name="my_tendency" value="2"> 성실한 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="checkbox" name="my_tendency" value="3"> 리더적인 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="checkbox" name="my_tendency" value="4"> 시간약속 잘 지키는 <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="checkbox" name="my_tendency" value="5"> 잘 따르는 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="checkbox" name="my_tendency" value="6"> 응답이 빠른 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br>
+
+							</td>
+						</tr>
+						<tr >
+							<td style="font-family: ff" colspan="3">
+								<b> 상대의 성향 </b> &nbsp;&nbsp;
+								<input type="checkbox" name="other_tendency" value="1"> 열정적인 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="checkbox" name="other_tendency" value="2"> 성실한 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="checkbox" name="other_tendency" value="3"> 리더적인 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="checkbox" name="other_tendency" value="4"> 시간약속 잘 지키는 <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="checkbox" name="other_tendency" value="5"> 잘 따르는 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="checkbox" name="other_tendency" value="6"> 응답이 빠른<br><br><br>
+							</td>
+						</tr>
+
+						<tr>
+							<td style="font-family: ff; padding-bottom: 125px;" colspan="3" >
+								<b>주요 활동 시간 </b> &nbsp;&nbsp;&nbsp; <select name="selected" size="1" style="font-size: 17px">
+									<option> 선택항목 </option>
+									<option value="day">평일</option>
+									<option value="end">주말</option>
+									<option value="all">평일&주말</option>
+								</select>
+
+								<select name="selected1" size="1" style="font-size: 17px" style="padding-left: 20px">
+									<option> 선택항목 </option>
+									<option value="7~12">오전(7:00-12:00)</option>
+									<option value="12~7">낮(12:00-17:00)</option>
+									<option value="17~21">오후(17:00-21:00)</option>
+									<option value="21~24">밤(21:00-24:00)</option>
+									<option value="0~5">새벽(00:00-05:00)</option><br><br><br>
+								</select>
+							</td>
+						</tr>
+				</table>
+
+				<section style="padding-top: 40px; text-align: center">
+					<input type="submit" value=" 제출하기 " class="next"><br><br><br>
+				</section>
+
+			</DIV>
+			</form>
+	
+		</div>
+    </body>
+    <footer>
+    	Made by
+    </footer>
+</html>
+

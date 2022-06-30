@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>그루, GROW 매칭</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../image/tree.png">
+		<link rel="stylesheet" href="../css/write.css">
+	</head>
+
+	<body>
+		<header>
+			<a href="../main/main.jsp"><img src="../image/logo.png"></a>
+		</header>
+
+		<div class="menubar">
+			<ul>
+				<li><a href="../match/matching.html"> 매칭 </a></li> 
+				<li><a href="../user/gathering.jsp"> 모집 </a></li> 
+				<li><a> 관리 </a>
+					<ul>
+						<li><a href="../manage/manageschedule.jsp"> 스케줄 관리 </a></li>
+						<li><a href="../manage/managedata.jsp"> 자료 관리 </a></li>
+					</ul>
+				</li>
+				<li><a> 마이 페이지 </a>
+		        	<ul>
+			            <li><a href="../user/info_edit.jsp"> 회원 정보 </a></li>
+			            <li><a href="../apply/apply_check.jsp"> 신청 내역 </a></li>
+			            <li><a href="../apply/apply.jsp"> 내 신청서 </a></li>
+		          </ul>
+		        </li> 
+			</ul>
+		</div>
+
+
+
+		<div  align = 'center'>
+			<section id="info" align = 'center' style="padding-top: 25px; height: 60px">
+				<span style="color: grey; "> 모집 게시글 작성 </span>
+				<br>
+				최대 10MB까지 업로드 가능합니다.
+			</section>
+
+			<section class="box" align = 'left' style="height: 700px;">
+				<form action="write1.jsp" method="post" enctype="multipart/form-data">
+				<table width="1000px">
+						<tr style="text-align: right;">
+							<td colspan="2">
+								<input type="radio" name="JO_FD" value="스터디"><span style="font-size: 24px; font-family: ff;" > 스터디 &nbsp;&nbsp;&nbsp;</span>
+								<input type="radio" name="JO_FD" value="튜터링"><span style="font-size: 24px; font-family: ff;"> 튜터링</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+							</td>
+						</tr>
+						<tr align="center">
+							<td bgcolor="lightgrey" style="font-family:ff; text-align: center;" width="200px" height="60px">
+								<b>제목</b> 
+							</td>
+							<td>
+								<input type="text" name="JO_TI" size="70px" placeholder="제목을 입력해주세요." style="font-size: 20px; font-family: ff; height: 60px; border: 0; background-color: #F0F0F0;" ><br>
+							</td>								
+						</tr>
+						<tr align="center">
+							<td bgcolor="lightgrey" style="font-family: ff;" width="200px" style="text-align: center;">
+								<b>내용</b><br> &nbsp;&nbsp;&nbsp; 
+							</td>
+							<td>
+								<textarea name="JO_CON" cols="70" rows="15" placeholder="내용을 입력해주세요." style="font-size: 20px; font-family: ff; border: 0; background-color: #F0F0F0;"></textarea>
+							</td>								
+						</tr>
+						<tr style="text-align: right;">
+							<td colspan="2">
+								<input type="radio" name="JO_MT" value="대면" ><span style="font-size: 24px; font-family: ff;" > 대면 &nbsp;&nbsp;&nbsp;</span>
+								<input type="radio" name="JO_MT" value="비대면"><span style="font-size: 24px; font-family: ff;"> 비대면</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+							</td>
+						</tr>	
+				</table>
+
+				<section style="float: right;" >
+					
+					<input type="text" class="upload_text" readonly="readonly">
+					<script src="../js/jquery.min.js"></script>
+					<script type="text/javascript" src="../js/write.js"></script>
+
+					<!--button-->
+					<div class="upload-btn_wrap">
+						<button type="button" title="이미지 첨부" class="next" name="JO_IR">
+							<span> 이미지 첨부 </span>  
+						</button>
+						<input type="file" class="input_file" title="이미지 첨부" name="JO_IR">
+					</div>
+					
+					<input type="submit" value=" 등   록 " class="next" style="float: right; margin-left: 3px;">
+					
+					
+				</section>
+			</form>
+	
+		</div>
+    </body>
+    <footer>
+        Made by 
+    </footer>
+</html>
+
